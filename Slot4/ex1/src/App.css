@@ -1,0 +1,160 @@
+/* Dark background applied to entire page */
+.dark-bg {
+  background-color: #2d2d2d;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body, html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Dark theme for hero carousel */
+.carousel {
+  background-color: #2d2d2d;
+  /* Reduce carousel height - width 100%, height constrained */
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  /* Constrain carousel item height */
+  height: 300px;
+}
+
+.carousel-item img {
+  /* Cover the carousel container without stretching */
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  /* Position caption to bottom */
+  bottom: 20px;
+}
+
+.carousel-caption h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu section now uses dark background */
+.menu-section {
+  background-color: #2d2d2d;
+  padding: 4rem 0;
+}
+
+.menu-section h2 {
+  color: white;
+}
+
+.menu-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.menu-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge-ribbon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.badge-sale {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.badge-new {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Badge positioned on left side of card */
+.badge-left {
+  left: 10px !important;
+  right: auto !important;
+}
+
+/* Booking section */
+.booking-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+}
+
+.booking-section h2 {
+  color: white;
+}
+
+.booking-section .form-control,
+.booking-section .form-select {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.booking-section .form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.booking-section textarea {
+  background-color: #f8f9fa !important;
+  color: #000;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 5rem;
+  border-top: 3px solid #ffc107;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: #ffc107 !important;
+}
+
+footer a:hover {
+  color: #ffd700 !important;
+}
+
+/* Navbar styling */
+.navbar-custom {
+  background-color: #2d2d2d !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+}
