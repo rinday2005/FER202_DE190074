@@ -25,7 +25,10 @@ export default function MenuCard({ title, image, originalPrice, salePrice, badge
           )}
         </div>
 
-        <Button variant="dark" className="mt-auto">
+        <Button variant="outline-dark" className="mt-auto">
+          View Detail
+        </Button>
+        <Button variant="dark" className="mt-2">
           Buy
         </Button>
       </Card.Body>

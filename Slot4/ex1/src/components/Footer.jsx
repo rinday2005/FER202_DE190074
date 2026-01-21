@@ -7,7 +7,19 @@ export default function Footer() {
       <Container>
         <Row className="mb-4">
           <Col md={4} className="mb-3 mb-md-0">
-            <h5 className="fw-bold mb-3"> Pizza House</h5>
+            <div className="d-flex align-items-center mb-3">
+              <img
+                src="../images/avatar.jpg"
+                alt="Avatar"
+                className="rounded-circle me-2"
+                style={{ width: "50px", height: "50px", objectFit: "cover" }}
+              />
+              <div>
+                <h5 className="fw-bold mb-0">Phương Nhi</h5>
+                <small className="text-white">nhi0372399699@gmail.com</small>
+              </div>
+            </div>
+            <h5 className="fw-bold mb-3">Pizza House</h5>
             <p>Authentic Italian pizza made with fresh ingredients and traditional recipes.</p>
           </Col>
           <Col md={4} className="mb-3 mb-md-0">
