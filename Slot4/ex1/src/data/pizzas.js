@@ -3,7 +3,7 @@ export const pizzas = [
   {
     id: 1,
     title: "Margherita Pizza",
-    image: "./images/Card1.jpg",
+    image: "/images/Card1.jpg",
     originalPrice: 40.0,
     salePrice: 14.99,
     isSale: true,
@@ -11,7 +11,7 @@ export const pizzas = [
   {
     id: 2,
     title: "Mushroom Pizza",
-    image: "./images/Card2.jpg",
+    image: "/images/Card2.jpg",
     originalPrice: null,
     salePrice: 23.0,
     isSale: false,
@@ -19,7 +19,7 @@ export const pizzas = [
   {
     id: 3,
     title: "Hawaiian Pizza",
-    image: "./images/Card3.jpg",
+    image: "/images/Card3.jpg",
     originalPrice: null,
     salePrice: 30.0,
     isNew: true,
@@ -27,7 +27,7 @@ export const pizzas = [
   {
     id: 4,
     title: "Pesto Pizza",
-    image: "./images/Card4.jpg",
+    image: "/images/Card4.jpg",
     originalPrice: 30.0,
     salePrice: 16.99,
     isSale: true,
@@ -35,7 +35,7 @@ export const pizzas = [
   {
     id: 5,
     title: "BBQ Chicken Pizza",
-    image: "./images/Card5.jpg",
+    image: "/images/Card5.jpg",
     originalPrice: 35.0,
     salePrice: 18.99,
     isSale: true,
@@ -43,7 +43,7 @@ export const pizzas = [
   {
     id: 6,
     title: "Seafood Pizza",
-    image: "./images/Card6.jpg",
+    image: "/images/Card6.jpg",
     originalPrice: null,
     salePrice: 28.0,
     isSale: false,
@@ -51,7 +51,7 @@ export const pizzas = [
   {
     id: 7,
     title: "Vegetarian Pizza",
-    image: "./images/Card7.jpg",
+    image: "/images/Card7.jpg",
     originalPrice: 32.0,
     salePrice: 15.99,
     isSale: true,
@@ -59,7 +59,7 @@ export const pizzas = [
   {
     id: 8,
     title: "Meat Lovers Pizza",
-    image: "./images/Card8.jpg",
+    image: "/images/Card8.jpg",
     originalPrice: null,
     salePrice: 32.0,
     isNew: true,
@@ -67,7 +67,7 @@ export const pizzas = [
   {
     id: 9,
     title: "Buffalo Chicken Pizza",
-    image: "./images/Card9.jpg",
+    image: "/images/Card9.jpg",
     originalPrice: 36.0,
     salePrice: 19.99,
     isSale: true,
@@ -75,7 +75,7 @@ export const pizzas = [
   {
     id: 10,
     title: "Mediterranean Pizza",
-    image: "./images/Card10.jpg",
+    image: "/images/Card10.jpg",
     originalPrice: null,
     salePrice: 25.0,
     isSale: false,
