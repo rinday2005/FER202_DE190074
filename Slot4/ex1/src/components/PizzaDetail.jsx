@@ -19,14 +19,7 @@ export default function PizzaDetail() {
   return (
     <div className="dark-bg min-vh-100">
       <Container className="py-5">
-        {/* Back button */}
-        <Button
-          variant="secondary"
-          className="mb-4"
-          onClick={() => navigate(-1)}
-        >
-          ← Quay lại
-        </Button>
+        
 
         <Row className="bg-dark rounded shadow-lg p-4 align-items-center">
           {/* IMAGE */}
