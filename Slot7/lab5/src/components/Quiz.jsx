@@ -1,46 +1,69 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import { Container, Card, Button } from 'react-bootstrap';
 import { quizData } from '../data/quizData';
 import Question from './Question';
 
+const initialState = {
+    currentQuestion: 0,
+    score: 0,
+    showScore: false,
+    selectedOption: ''
+};
+
+const quizReducer = (state, action) => {
+    switch (action.type) {
+        case 'SELECT_OPTION':
+            return {
+                ...state,
+                selectedOption: action.payload
+            };
+        case 'NEXT_QUESTION':
+            const isCorrect = state.selectedOption === quizData[state.currentQuestion].answer;
+            const nextQuestion = state.currentQuestion + 1;
+
+            if (nextQuestion < quizData.length) {
+                return {
+                    ...state,
+                    score: isCorrect ? state.score + 1 : state.score,
+                    currentQuestion: nextQuestion,
+                    selectedOption: ''
+                };
+            } else {
+                return {
+                    ...state,
+                    score: isCorrect ? state.score + 1 : state.score,
+                    showScore: true
+                };
+            }
+        case 'RESET_QUIZ':
+            return initialState;
+        default:
+            return state;
+    }
+};
+
 function Quiz() {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [score, setScore] = useState(0);
-    const [showScore, setShowScore] = useState(false);
-    const [selectedOption, setSelectedOption] = useState('');
+    const [state, dispatch] = useReducer(quizReducer, initialState);
 
     const handleOptionSelect = (option) => {
-        setSelectedOption(option);
+        dispatch({ type: 'SELECT_OPTION', payload: option });
     };
 
     const handleNextQuestion = () => {
-        if (selectedOption === quizData[currentQuestion].answer) {
-            setScore(score + 1);
-        }
-
-        const nextQuestion = currentQuestion + 1;
-        if (nextQuestion < quizData.length) {
-            setCurrentQuestion(nextQuestion);
-            setSelectedOption('');
-        } else {
-            setShowScore(true);
-        }
+        dispatch({ type: 'NEXT_QUESTION' });
     };
 
     const resetQuiz = () => {
-        setCurrentQuestion(0);
-        setScore(0);
-        setShowScore(false);
-        setSelectedOption('');
+        dispatch({ type: 'RESET_QUIZ' });
     };
 
     return (
         <Container className="mt-4">
             <h2 className="text-center mb-4">Quiz Page</h2>
-            {showScore ? (
+            {state.showScore ? (
                 <Card className="text-center p-4 shadow-sm">
                     <Card.Body>
-                        <h3>You scored {score} out of {quizData.length}</h3>
+                        <h3>You scored {state.score} out of {quizData.length}</h3>
                         <Button variant="primary" onClick={resetQuiz} className="mt-3">
                             Play Again
                         </Button>
@@ -49,20 +72,20 @@ function Quiz() {
             ) : (
                 <>
                     <Question
-                        questionData={quizData[currentQuestion]}
-                        selectedOption={selectedOption}
+                        questionData={quizData[state.currentQuestion]}
+                        selectedOption={state.selectedOption}
                         onOptionSelect={handleOptionSelect}
                     />
                     <div className="mt-3 text-center">
                         <Button
                             variant="primary"
                             onClick={handleNextQuestion}
-                            disabled={!selectedOption}
+                            disabled={!state.selectedOption}
                         >
-                            {currentQuestion === quizData.length - 1 ? 'Finish' : 'Next'}
+                            {state.currentQuestion === quizData.length - 1 ? 'Finish' : 'Next'}
                         </Button>
                         <div className="mt-2 text-muted">
-                            Question {currentQuestion + 1} of {quizData.length}
+                            Question {state.currentQuestion + 1} of {quizData.length}
                         </div>
                     </div>
                 </>
