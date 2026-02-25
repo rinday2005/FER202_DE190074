@@ -15,6 +15,9 @@ function NavBarPizza() {
                         <Nav.Link as={NavLink} to="/register">Register</Nav.Link>
                         <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
                         <Nav.Link as={NavLink} to="/quiz">Quiz</Nav.Link>
+                        <Nav.Link as={NavLink} to="/lazy">Lazy Load</Nav.Link>
+                        <Nav.Link as={NavLink} to="/users">Users</Nav.Link>
+                        <Nav.Link as={NavLink} to="/posts">Posts</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
