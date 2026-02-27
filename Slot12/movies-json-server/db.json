@@ -1,0 +1,182 @@
+{
+  "genres": [
+    {
+      "id": 1,
+      "name": "Sci-Fi"
+    },
+    {
+      "id": 2,
+      "name": "Comedy"
+    },
+    {
+      "id": 3,
+      "name": "Drama"
+    },
+    {
+      "id": 4,
+      "name": "Horror"
+    },
+    {
+      "id": 5,
+      "name": "Romance"
+    },
+    {
+      "id": 6,
+      "name": "Action"
+    },
+    {
+      "id": 7,
+      "name": "Thriller"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Galactic Wars",
+      "description": "Epic space battles decide the fate of a fractured galaxy as rival factions clash for control.",
+      "poster": "/images/poster1.jpg",
+      "genreId": 1,
+      "year": 2022,
+      "country": "USA",
+      "duration": 132
+    },
+    {
+      "id": 2,
+      "title": "Laugh Out Loud",
+      "description": "A feel-good comedy about friendship and second chances.",
+      "poster": "https://via.placeholder.com/150x220?text=Laugh+Out+Loud",
+      "genreId": 2,
+      "year": 2021,
+      "country": "UK",
+      "duration": 105
+    },
+    {
+      "id": 3,
+      "title": "Deep Blue",
+      "description": "A gripping survival drama set far from shore.",
+      "poster": "https://via.placeholder.com/150x220?text=Deep+Blue",
+      "genreId": 3,
+      "year": 2019,
+      "country": "Australia",
+      "duration": 118
+    },
+    {
+      "id": 4,
+      "title": "Haunted House",
+      "description": "A teen dares to spend one night in a house with a dark past.",
+      "poster": "https://via.placeholder.com/150x220?text=Haunted+House",
+      "genreId": 4,
+      "year": 2020,
+      "country": "Canada",
+      "duration": 98
+    },
+    {
+      "id": 5,
+      "title": "City of Love",
+      "description": "Two strangers meet in a sleepless city.",
+      "poster": "https://via.placeholder.com/150x220?text=City+of+Love",
+      "genreId": 5,
+      "year": 2018,
+      "country": "France",
+      "duration": 110
+    },
+    {
+      "id": 6,
+      "title": "The Time Traveler",
+      "description": "A scientist discovers a way to bend time.",
+      "poster": "https://via.placeholder.com/150x220?text=Time+Traveler",
+      "genreId": 1,
+      "year": 2023,
+      "country": "USA",
+      "duration": 124
+    },
+    {
+      "id": 7,
+      "title": "Street Runner",
+      "description": "An ex-courier is forced back for one last job.",
+      "poster": "https://via.placeholder.com/150x220?text=Street+Runner",
+      "genreId": 6,
+      "year": 2021,
+      "country": "Japan",
+      "duration": 102
+    },
+    {
+      "id": 8,
+      "title": "Hidden Truth",
+      "description": "A reporter unravels a powerful conspiracy.",
+      "poster": "https://via.placeholder.com/150x220?text=Hidden+Truth",
+      "genreId": 7,
+      "year": 2022,
+      "country": "Germany",
+      "duration": 115
+    },
+    {
+      "id": 9,
+      "title": "Kingdom of Ash",
+      "description": "A fallen prince must unite rival clans.",
+      "poster": "https://via.placeholder.com/150x220?text=Kingdom+of+Ash",
+      "genreId": 6,
+      "year": 2020,
+      "country": "New Zealand",
+      "duration": 141
+    },
+    {
+      "id": 10,
+      "title": "Silent Signal",
+      "description": "A mysterious signal from space triggers global panic.",
+      "poster": "https://via.placeholder.com/150x220?text=Silent+Signal",
+      "genreId": 1,
+      "year": 2024,
+      "country": "USA",
+      "duration": 119
+    },
+    {
+      "id": 11,
+      "title": "Broken Melody",
+      "description": "A musician rediscovers hope after tragedy.",
+      "poster": "https://via.placeholder.com/150x220?text=Broken+Melody",
+      "genreId": 3,
+      "year": 2022,
+      "country": "Italy",
+      "duration": 113
+    },
+    {
+      "id": 12,
+      "title": "Midnight Escape",
+      "description": "A group of strangers escape a deadly game.",
+      "poster": "https://via.placeholder.com/150x220?text=Midnight+Escape",
+      "genreId": 7,
+      "year": 2023,
+      "country": "South Korea",
+      "duration": 108
+    },
+    {
+      "id": 13,
+      "title": "Love in Paris",
+      "description": "A romantic journey through the streets of Paris.",
+      "poster": "https://via.placeholder.com/150x220?text=Love+in+Paris",
+      "genreId": 5,
+      "year": 2021,
+      "country": "France",
+      "duration": 107
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "email": "admin@example.com",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "123",
+      "email": "user@example.com",
+      "role": "user",
+      "status": "active"
+    }
+  ]
+}
